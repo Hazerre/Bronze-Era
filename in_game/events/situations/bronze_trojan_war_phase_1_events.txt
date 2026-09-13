@@ -1,17 +1,12 @@
-namespace = trojan_war_raid_on_anatolia_success
+namespace = trojan_war_phase_one
 
 # Mycenae Outcomes
-trojan_war_raid_on_anatolia_success.1 = {
+trojan_war_phase_one.1 = {
     type = country_event
     title = trojan_war_raid_on_anatolia_success.t
     desc = trojan_war_raid_on_anatolia_success.d
-    
-     trigger = {
-         NOT = {
-            has_global_variable = trojan_war_phase_1_ended
-         }
-    }
-    
+    is_triggered_only = yes
+
     hidden = no 
 
 	 immediate = {
@@ -50,13 +45,11 @@ trojan_war_raid_on_anatolia_success.1 = {
 	}
 }
 
-namespace = trojan_war_raid_on_anatolia_failed
-
-trojan_war_raid_on_anatolia_failed.1 = {
+trojan_war_phase_one.2 = {
     type = country_event
     title = trojan_war_raid_on_anatolia_failed.t
     desc = trojan_war_raid_on_anatolia_failed.d
-
+    is_triggered_only = yes
     hidden = no
 
 	immediate = {
@@ -95,20 +88,12 @@ trojan_war_raid_on_anatolia_failed.1 = {
 	}
 }
 
-namespace = anatolia_coastline_is_defend
-
 # Wilusa / Anatolia Outcomes
-anatolia_coastline_is_defend.1 = {
+trojan_war_phase_one.3 = {
 	type = country_event
 	title = anatolia_coastline_is_defend.t
 	desc = anatolia_coastline_is_defend.d
-
-     trigger = {
-         NOT = {
-            has_global_variable = trojan_war_phase_1_ended
-         }
-    }
-
+    is_triggered_only = yes
 	hidden = no
 
 	option = {
@@ -117,9 +102,7 @@ anatolia_coastline_is_defend.1 = {
 	}
 }
 
-namespace = trojan_war_phase_1_flavor_event
-
-trojan_war_phase_1_flavor_event.10 = {
+trojan_war_phase_one.10 = {
     type = country_event
     title = trojan_war_phase_1_flavor_event_10.t
     desc = trojan_war_phase_1_flavor_event_10.d
@@ -131,7 +114,7 @@ trojan_war_phase_1_flavor_event.10 = {
     }
 }
 
-trojan_war_phase_1_flavor_event.20 = {
+trojan_war_phase_one.20 = {
     type = country_event
     title = trojan_war_phase_1_flavor_event_20.t
     desc = trojan_war_phase_1_flavor_event_20.d
@@ -142,7 +125,7 @@ trojan_war_phase_1_flavor_event.20 = {
     }
 }
 
-trojan_war_phase_1_flavor_event.30 = {
+trojan_war_phase_one.30 = {
     type = country_event
     title = trojan_war_phase_1_flavor_event_30.t
     desc = trojan_war_phase_1_flavor_event_30.d
@@ -153,7 +136,7 @@ trojan_war_phase_1_flavor_event.30 = {
     }
 }
 
-trojan_war_phase_1_flavor_event.40 = {
+trojan_war_phase_one.40 = {
     type = country_event
     title = trojan_war_phase_1_flavor_event_40.t
     desc = trojan_war_phase_1_flavor_event_40.d
@@ -164,7 +147,7 @@ trojan_war_phase_1_flavor_event.40 = {
     }
 }
 
-trojan_war_phase_1_flavor_event.50 = {
+trojan_war_phase_one.50 = {
     type = country_event
     title = trojan_war_phase_1_flavor_event_50.t
     desc = trojan_war_phase_1_flavor_event_50.d

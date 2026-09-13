@@ -34,8 +34,11 @@ trojan_war_phase_2 = {
 		c:SEHA = {
        		 change_subject_type = subject_type:trojan_situation_vassal
    			}
-		c:0001G = { trigger_event_non_silently = start_trojan_war_phase_2.1 }
-		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
+		c:0001G = { trigger_event_non_silently = { id = trojan_war_phase_two_events.1 } }
+		set_global_variable = { 
+			name = "trojan_war_phase_2_started" 
+			value = yes 
+		}
 		
 		c:0001G = {  
 			OR = {
@@ -1049,17 +1052,20 @@ trojan_war_phase_2 = {
     
     current_date >= 14.6.1 
     
-    NOT = {
-        any_current_war = {
-            any_war_participant = { tag = 0001G }
-            any_war_participant = { tag = WILUS }
-            cb_type = trojan_war_casus_belli
-        }
-    }
-}
+		NOT = {
+			any_current_war = {
+				any_war_participant = { tag = 0001G }
+				any_war_participant = { tag = WILUS }
+				cb_type = trojan_war_casus_belli
+			}
+		}
+	}
 
 	on_end = {
-		set_global_variable = { name = "trojan_war_phase_2_ended" value = yes }
+		set_global_variable = { 
+			name = "trojan_war_phase_2_ended" 
+			value = yes 
+		}
 		c:0001G = {
             remove_country_modifier = trojan_war_greece_modifier_phase_2_during_war_greece_count_one
 			remove_country_modifier = trojan_war_greece_modifier_phase_2_during_war_greece_count_two
@@ -1235,15 +1241,15 @@ trojan_war_phase_2 = {
 		NOT = { has_global_variable = trojan_war_phase_2_ended }
 	}
 
-	on_monthly = {
-			random_events = {
-			chance_to_happen = 11
-			100 = 0
-			5 = trojan_war_phase_2_flavor_event.10
-			6 = trojan_war_phase_2_flavor_event.20
-			4 = trojan_war_phase_2_flavor_event.30
-			8 = trojan_war_phase_2_flavor_event.40
-			5 = trojan_war_phase_2_flavor_event.50
-		}
-	}
+	# on_monthly = {
+	# 		random_events = {
+	# 		chance_to_happen = 11
+	# 		100 = 0
+	# 		5 = trojan_war_phase_two_events.10
+	# 		6 = trojan_war_phase_two_events.20
+	# 		4 = trojan_war_phase_two_events.30
+	# 		8 = trojan_war_phase_two_events.40
+	# 		5 = trojan_war_phase_two_events.50
+	# 	}
+	# }
 }
