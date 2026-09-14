@@ -16950,3 +16950,10 @@ can_promote_cities = {
 		category=country
 	}
 }
+
+household_expansion_developed = {
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
