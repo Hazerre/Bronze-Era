@@ -160,12 +160,17 @@ tribal_hegemony_advance = {
 
 	depth = 0
 
-	potential = {
-		household_expansion_allowed = yes
+	allow = {
+		OR = {
+			household_expansion_allowed = yes
+			household_expansion_developed = yes
+		}
 	}
 	
 	allow_subjects = yes
 	unlock_subject_type = tributary
+
+	household_expansion_developed = yes
 
 	starting_technology_level = 3
 }
@@ -339,10 +344,6 @@ city_building_advance = {
 	can_promote_cities = yes
 
 	requires = palace_economy_advance
-
-	allow = {
-		has_tribal_government = no
-	}
 
 	starting_technology_level = 3
 }

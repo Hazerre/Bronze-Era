@@ -7,3 +7,6 @@
 
   MODIFIER_TYPE_NAME_can_promote_cities: "Can promote Towns to Cities"
   MODIFIER_TYPE_DESC_can_promote_cities: "Their Towns can be promoted to Cities."
+
+  MODIFIER_TYPE_NAME_household_expansion_developed: "Developed Tribal Institutions"
+  MODIFIER_TYPE_DESC_household_expansion_developed: "This society has developed tribal institutions."
