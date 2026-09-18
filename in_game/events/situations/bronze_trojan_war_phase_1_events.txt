@@ -5,7 +5,7 @@ trojan_war_phase_one.1 = {
     type = country_event
     title = trojan_war_raid_on_anatolia_success.t
     desc = trojan_war_raid_on_anatolia_success.d
-    is_triggered_only = yes
+   
 
     hidden = no 
 
