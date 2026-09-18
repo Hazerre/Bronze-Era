@@ -5,6 +5,8 @@ trojan_war_raid_on_anatolia_success.1 = {
     type = country_event
     title = trojan_war_raid_on_anatolia_success.t
     desc = trojan_war_raid_on_anatolia_success.d
+    outcome = neutral
+
     
      trigger = {
          NOT = {

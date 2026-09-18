@@ -1,0 +1,14 @@
+namespace = check_test_event
+
+check_test_event.1 = {
+    type = country_event
+    title = debug_test.1.t
+    desc = debug_test.1.d
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/institution_spawn_events_long_dist_trade_1.dds"
+	outcome = neutral
+
+    option = {
+        name = debug_test.1.a
+    }
+}
