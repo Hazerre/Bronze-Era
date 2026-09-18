@@ -6,10 +6,10 @@ trojan_war_end.1 = {
     desc = trojan_war_end_01.d
     is_triggered_only = yes
     hidden = no
-# For Greece victory
+    # For Greece victory
     immediate = {
         root = { 
-                add_prestige = 10
+            add_prestige = 10
             OR = {
                 if = { limit = { global_var:anatolia_raid_success_count = 1 } 
                     add_country_modifier = { 
@@ -60,7 +60,7 @@ trojan_war_end.2 = {
     desc = trojan_war_end_02.d
     is_triggered_only = yes
     hidden = no
-# For Anatolia victory
+    # For Anatolia victory
     immediate = {
         root = { 
                 add_prestige = 10
@@ -115,15 +115,17 @@ trojan_war_end.3 = {
     is_triggered_only = yes
     hidden = no
 # For Greece loss
- option = {
-    name = "trojan_war_end.a"
-    root = { add_prestige = - 10
-             add_country_modifier = { modifier = trojan_war_end_3  
-            days = -1
-            mode = add
+    option = {
+        name = "trojan_war_end.a"
+        root = {
+            add_prestige = -10
+            add_country_modifier = {
+                modifier = trojan_war_end_3  
+                days = -1
+                mode = add
             }
-}
-}
+        }
+    }
 }
 
 trojan_war_end.4 = {
@@ -132,16 +134,18 @@ trojan_war_end.4 = {
     desc = trojan_war_end_04.d
     is_triggered_only = yes
     hidden = no
-# For Anatolia loss
- option = {
-    name = "trojan_war_end.a"
-    root = { add_prestige = - 10
-             add_country_modifier = { modifier = trojan_war_end_4  
-            days = -1
-            mode = add
+    # For Anatolia loss
+    option = {
+        name = "trojan_war_end.a"
+        root = {
+            add_prestige = -10
+            add_country_modifier = {
+                modifier = trojan_war_end_4  
+                days = -1
+                mode = add
             }
-}
-}
+        }
+    }
 }
 
 # For minor in anatolia under here
@@ -152,15 +156,17 @@ trojan_war_end.5 = {
     is_triggered_only = yes
     hidden = no
 # For Anatolia loss
- option = {
-    name = "trojan_war_end.a"
-    root = { add_prestige = - 10
-             add_country_modifier = { modifier = trojan_war_end_5  
-            days = -1
-            mode = add
+    option = {
+        name = "trojan_war_end.a"
+        root = {
+            add_prestige = -10
+            add_country_modifier = {
+                modifier = trojan_war_end_5  
+                days = -1
+                mode = add
             }
-}
-}
+        }
+    }
 }
 
 trojan_war_end.6 = {
@@ -169,14 +175,16 @@ trojan_war_end.6 = {
     desc = trojan_war_end_06.d
     is_triggered_only = yes
     hidden = no
-# For Anatolia victory
- option = {
-    name = "trojan_war_end.a"
-    root = { add_prestige = 10
-             add_country_modifier = { modifier = trojan_war_end_6  
-            days = -1
-            mode = add
+    # For Anatolia victory
+    option = {
+        name = "trojan_war_end.a"
+        root = {
+            add_prestige = 10
+            add_country_modifier = {
+                modifier = trojan_war_end_6  
+                days = -1
+                mode = add
             }
-}
-}
+        }
+    }
 }

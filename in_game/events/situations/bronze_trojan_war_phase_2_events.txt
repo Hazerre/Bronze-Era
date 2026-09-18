@@ -7,32 +7,33 @@ trojan_war_phase_two_events.1 = {
     is_triggered_only = yes
     hidden = no
 
-immediate = {
-    declare_war_with_cb = {
-        target = c:WILUS
-        type = casus_belli:trojan_war_casus_belli
-        set_variable = {
-            name = is_trojan_war
-            value = yes
+    immediate = {
+        declare_war_with_cb = {
+            target = c:WILUS
+            type = casus_belli:trojan_war_casus_belli
+            set_variable = {
+                name = is_trojan_war
+                value = yes
+            }
         }
-    }
-    c:WILUS = { save_scope_as = target_country }
-    c:0001G = { save_scope_as = target }
-    random_current_war = {
-        limit = {
-            any_defender = { this = c:WILUS }
+        c:WILUS = { save_scope_as = target_country }
+        c:0001G = { save_scope_as = target }
+        random_current_war = {
+            limit = {
+                any_defender = { this = c:WILUS }
+            }
+            save_scope_as = trojan_war 
         }
-        save_scope_as = trojan_war 
-    }
-    c:AHHI = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
-    c:LYCIA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
-    c:SEHA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
-    c:LUKKA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
-    c:MASA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
-} 
-option = {
-    name = "trojan_war_phase_2_start.a"
-} 
+        c:AHHI = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+        c:LYCIA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+        c:SEHA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+        c:LUKKA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+        c:MASA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+    } 
+    
+    option = {
+        name = "trojan_war_phase_2_start.a"
+    } 
 }
 
 trojan_war_phase_two_events.2 = {
@@ -42,12 +43,12 @@ trojan_war_phase_two_events.2 = {
     is_triggered_only = yes
     hidden = no
 
-immediate = {
-    root = { join_war_as_defender = { war = scope:trojan_war } }
-}
-option = {
-     name = "join_trojan_war.a"
-}
+    immediate = {
+        root = { join_war_as_defender = { war = scope:trojan_war } }
+    }
+    option = {
+        name = "join_trojan_war.a"
+    }
 }
 
 trojan_war_phase_two_events.10 = {
@@ -56,13 +57,15 @@ trojan_war_phase_two_events.10 = {
     desc = trojan_war_phase_2_flavor_event_10.d
     is_triggered_only = yes
     hidden = no
+
     option = {
         name = "trojan_war_phase_2_flavor_event_10.a"
         treasury = {
-            add = -120 # want to be calcualted by wealth base
+            add = -120 # want to be calculated by wealth base
         }
     }
-     option = {
+
+    option = {
         name = "trojan_war_phase_2_flavor_event_10.b"
         add_country_modifier = {
             modifier = trojan_war_phase_2_flavor_event_10_b
@@ -80,6 +83,7 @@ trojan_war_phase_two_events.20 = {
     desc = trojan_war_phase_2_flavor_event_20.d
     is_triggered_only = yes
     hidden = no
+
     option = {
         name = "trojan_war_phase_2_flavor_event_20.a"
     }
@@ -90,6 +94,7 @@ trojan_war_phase_two_events.30 = {
     desc = trojan_war_phase_2_flavor_event_30.d
     is_triggered_only = yes
     hidden = no
+
     option = {
         name = "trojan_war_phase_2_flavor_event_30.a"
     }
@@ -100,6 +105,7 @@ trojan_war_phase_two_events.40 = {
     desc = trojan_war_phase_2_flavor_event_40.d
     is_triggered_only = yes
     hidden = no
+
     option = {
         name = "trojan_war_phase_2_flavor_event_40.a"
     }
@@ -110,6 +116,7 @@ trojan_war_phase_two_events.50 = {
     desc = trojan_war_phase_2_flavor_event_50.d
     is_triggered_only = yes
     hidden = no
+
     option = {
         name = "trojan_war_phase_2_flavor_event_50.a"
     }

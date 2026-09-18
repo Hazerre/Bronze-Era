@@ -69,7 +69,7 @@ mercs.2 = {
 	title = mercs.2.title
 	desc = mercs.2.desc
 	outcome = neutral
-	    illustration_tags = {
+    illustration_tags = {
         10 = armed
         10 = exterior
     }
@@ -146,7 +146,7 @@ mercs.3 = {
 	title = mercs.3.title
 	desc = mercs.3.desc
 	outcome = neutral
-	    illustration_tags = {
+    illustration_tags = {
         10 = armed
         10 = interior
     }
@@ -225,7 +225,7 @@ mercs.4 = {
 	title = mercs.4.title
 	desc = mercs.4.desc
 	outcome = neutral
-		    illustration_tags = {
+	illustration_tags = {
         10 = happy
         10 = interior
     }
@@ -319,7 +319,7 @@ mercs.7 = {
 	title = mercs.7.title
 	desc = mercs.7.desc
 	outcome = neutral
-		 illustration_tags = {
+	illustration_tags = {
         10 = happy
         10 = interior
     }
