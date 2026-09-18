@@ -20,7 +20,7 @@ ise_long_dist_trade.1 = {
 		any_owned_location = {
 			is_market_center = yes
 			market = {
-				total_goods_value_traded > 150
+				total_goods_value_traded > 50
 			}
 		}
 	}
