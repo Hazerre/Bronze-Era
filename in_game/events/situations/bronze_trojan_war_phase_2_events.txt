@@ -1,6 +1,6 @@
-﻿namespace = start_trojan_war_phase_2
+﻿namespace = trojan_war_phase_two_events
 
-start_trojan_war_phase_2.1 = {
+trojan_war_phase_two_events.1 = {
     type = country_event
     title = trojan_war_phase_2_start.t
     desc = trojan_war_phase_2_start.d
@@ -24,20 +24,18 @@ immediate = {
         }
         save_scope_as = trojan_war 
     }
-    c:AHHI = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
-    c:LYCIA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
-    c:SEHA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
-    c:LUKKA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
-    c:MASA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
+    c:AHHI = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+    c:LYCIA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+    c:SEHA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+    c:LUKKA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
+    c:MASA = { trigger_event_non_silently = { id = trojan_war_phase_two_events.2 days = 5 } }
 } 
 option = {
     name = "trojan_war_phase_2_start.a"
 } 
 }
 
-namespace = join_trojan_War
-
-join_trojan_War.1 = {
+trojan_war_phase_two_events.2 = {
     type = country_event
     title = join_trojan_War.t
     desc = join_trojan_War.d
@@ -52,192 +50,7 @@ option = {
 }
 }
 
-namespace = trojan_war_end
-
-trojan_war_end.1 = {
-    type = country_event
-    title = trojan_war_end_01.t
-    desc = trojan_war_end_01.d
-    is_triggered_only = yes
-    hidden = no
-# For Greece victory
-    immediate = {
-        root = { 
-                add_prestige = 10
-            OR = {
-                if = { limit = { global_var:anatolia_raid_success_count = 1 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_greece_victory_count_one  
-                    days = -1
-                    }
-                }
-                if = { limit = { global_var:anatolia_raid_success_count = 2 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_greece_victory_count_two  
-                    days = -1
-                    }
-                }
-                if = { limit = { global_var:anatolia_raid_success_count = 3 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_greece_victory_count_three  
-                    days = -1
-                    }
-                }
-                if = { limit = { global_var:anatolia_raid_success_count = 4 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_greece_victory_count_four  
-                    days = -1
-                    }
-                }
-                if = { limit = { global_var:anatolia_raid_success_count >= 5 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_greece_victory_count_five  
-                    days = -1
-                    }
-                }
-            }
-        }
-    }
-    option = {
-        name = "trojan_war_end.a"
-    }
-}
-
-trojan_war_end.2 = {
-    type = country_event
-    title = trojan_war_end_02.t
-    desc = trojan_war_end_02.d
-    is_triggered_only = yes
-    hidden = no
-# For Anatolia victory
-    immediate = {
-        root = { 
-                add_prestige = 10
-            OR = {
-                if = { limit = { global_var:anatolia_raid_failed_count = 1 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_anatolia_victory_count_one  
-                    days = -1
-                    }
-                }
-                if = { limit = { global_var:anatolia_raid_failed_count = 2 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_anatolia_victory_count_two  
-                    days = -1
-                    }
-                }
-                if = { limit = { global_var:anatolia_raid_failed_count = 3 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_anatolia_victory_count_three  
-                    days = -1
-                    }
-                }
-                if = { limit = { global_var:anatolia_raid_failed_count = 4 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_anatolia_victory_count_four  
-                    days = -1
-                    }
-                }
-                if = { limit = { global_var:anatolia_raid_failed_count >= 5 } 
-                    add_country_modifier = { 
-                    mode = add
-                    modifier = trojan_war_end_anatolia_victory_count_five  
-                    days = -1
-                    }
-                }
-            }
-        }
-    }
-    option = {
-        name = "trojan_war_end.a"
-    }
-}
-
-trojan_war_end.3 = {
-    type = country_event
-    title = trojan_war_end_03.t
-    desc = trojan_war_end_03.d
-    is_triggered_only = yes
-    hidden = no
-# For Greece loss
- option = {
-    name = "trojan_war_end.a"
-    root = { add_prestige = - 10
-             add_country_modifier = { modifier = trojan_war_end_3  
-            days = -1
-            mode = add
-            }
-}
-}
-}
-
-trojan_war_end.4 = {
-    type = country_event
-    title = trojan_war_end_04.t
-    desc = trojan_war_end_04.d
-    is_triggered_only = yes
-    hidden = no
-# For Anatolia loss
- option = {
-    name = "trojan_war_end.a"
-    root = { add_prestige = - 10
-             add_country_modifier = { modifier = trojan_war_end_4  
-            days = -1
-            mode = add
-            }
-}
-}
-}
-
-# For minor in anatolia under here
-trojan_war_end.5 = {
-    type = country_event
-    title = trojan_war_end_05.t
-    desc = trojan_war_end_05.d
-    is_triggered_only = yes
-    hidden = no
-# For Anatolia loss
- option = {
-    name = "trojan_war_end.a"
-    root = { add_prestige = - 10
-             add_country_modifier = { modifier = trojan_war_end_5  
-            days = -1
-            mode = add
-            }
-}
-}
-}
-
-trojan_war_end.6 = {
-    type = country_event
-    title = trojan_war_end_06.t
-    desc = trojan_war_end_06.d
-    is_triggered_only = yes
-    hidden = no
-# For Anatolia victory
- option = {
-    name = "trojan_war_end.a"
-    root = { add_prestige = 10
-             add_country_modifier = { modifier = trojan_war_end_6  
-            days = -1
-            mode = add
-            }
-}
-}
-}
-
-namespace = trojan_war_phase_2_flavor_event
-
-trojan_war_phase_2_flavor_event.10 = {
+trojan_war_phase_two_events.10 = {
     type = country_event
     title = trojan_war_phase_2_flavor_event_10.t
     desc = trojan_war_phase_2_flavor_event_10.d
@@ -261,7 +74,7 @@ trojan_war_phase_2_flavor_event.10 = {
         }
     }
 }
-trojan_war_phase_2_flavor_event.20 = {
+trojan_war_phase_two_events.20 = {
     type = country_event
     title = trojan_war_phase_2_flavor_event_20.t
     desc = trojan_war_phase_2_flavor_event_20.d
@@ -271,7 +84,7 @@ trojan_war_phase_2_flavor_event.20 = {
         name = "trojan_war_phase_2_flavor_event_20.a"
     }
 }
-trojan_war_phase_2_flavor_event.30 = {
+trojan_war_phase_two_events.30 = {
     type = country_event
     title = trojan_war_phase_2_flavor_event_30.t
     desc = trojan_war_phase_2_flavor_event_30.d
@@ -281,7 +94,7 @@ trojan_war_phase_2_flavor_event.30 = {
         name = "trojan_war_phase_2_flavor_event_30.a"
     }
 }
-trojan_war_phase_2_flavor_event.40 = {
+trojan_war_phase_two_events.40 = {
     type = country_event
     title = trojan_war_phase_2_flavor_event_40.t
     desc = trojan_war_phase_2_flavor_event_40.d
@@ -291,7 +104,7 @@ trojan_war_phase_2_flavor_event.40 = {
         name = "trojan_war_phase_2_flavor_event_40.a"
     }
 }
-trojan_war_phase_2_flavor_event.50 = {
+trojan_war_phase_two_events.50 = {
     type = country_event
     title = trojan_war_phase_2_flavor_event_50.t
     desc = trojan_war_phase_2_flavor_event_50.d
