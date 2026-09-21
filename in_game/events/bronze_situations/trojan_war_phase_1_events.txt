@@ -32,9 +32,9 @@ trojan_war_phase_one.1 = {
         }
     #  if = {
     #    limit = {
-    #        global_var:anatolia_raid_success_count = 1
+    #        global_var:anatolia_raid_success_count = 2
     #    }
-    #    error_log = "Anatolia raid success count works"
+    #    error_log = "Anatolia raid success count set as 2"
     # }
 
     }
