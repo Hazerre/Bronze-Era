@@ -8,10 +8,8 @@ destroy_troy_event.1 = {
 	option = {
 		name = "destroy_troy_event.a"
 		location:canakkale = {
-			change_location_rank = {
-				rank = town
-			}
-			 change_prosperity = prosperity_severe_penalty
+			change_location_rank = location_rank:town
+			change_prosperity = prosperity_severe_penalty
 		}
 		
 	}
