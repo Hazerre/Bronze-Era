@@ -10,7 +10,7 @@ trojan_war_end.1 = {
     immediate = {
         root = { 
             add_prestige = 10
-            OR = {
+            
                 if = { limit = { global_var:anatolia_raid_success_count = 1 } 
                     add_country_modifier = { 
                     mode = add
@@ -46,7 +46,7 @@ trojan_war_end.1 = {
                     days = -1
                     }
                 }
-            }
+            
         }
     }
     option = {
@@ -64,7 +64,7 @@ trojan_war_end.2 = {
     immediate = {
         root = { 
                 add_prestige = 10
-            OR = {
+            
                 if = { limit = { global_var:anatolia_raid_failed_count = 1 } 
                     add_country_modifier = { 
                     mode = add
@@ -100,7 +100,7 @@ trojan_war_end.2 = {
                     days = -1
                     }
                 }
-            }
+            
         }
     }
     option = {
