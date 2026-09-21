@@ -1,16 +1,79 @@
-# namespace = mycenaean_civil_war
+namespace = mycenaean_civil_war
 
-# mycenaean_civil_war.1 = {
-#     type = country_event
-#     category = disaster
-#     title = mycenaean_civil_war.1.title
-#     desc = mycenaean_civil_war.1.desc
+mycenaean_civil_war.1 = {
+    type = country_event
+    category = disaster
+    title = mycenaean_civil_war.1.title
+    desc = mycenaean_civil_war.1.desc
 
-#     immediate = {
-#         save_scope_as = mycenaean_civil_war_pretender_variable
-#     }
+    immediate = {
+		ruler_or_regent = { save_scope_as = target_character_1 }
+		name = size_of_mycenaean_civil_war_pretender_variable
+		value = {
+			add = var:country_influence # GET 0001G Influance in here , wil it even have the same effect
+			multiply = -0.1
+			min = 5
+		}
+		create_rebel = {
+			category = pretender
+			name = mycenaean_civil_war_pretender_name
+			save_scope_as = mycenaean_civil_war_pretender
+		}
+		ordered_character = {
+			limit = {
+				is_adult = yes
+				is_ruler = no
+				is_regent = no
+				is_heir = no
+			}
+			order_by = {
+				value = total_abilities
+			}
+			max = 1
+			save_scope_as = target_character_2
+			root = {
+				set_variable = {
+					name = pretender_rebel_character
+					value = prev
+				}
+			}
+			change_character_allegiance = scope:mycenaean_civil_war_pretender
+		}
+		ordered_province = {
+			limit = {
+				region = root.capital.region
+				NOT = {
+					any_location_in_province = { is_capital = yes }
+				}
+				population > 0
+			}
+			order_by = {
+				value = {
+					add = population
+					if = {
+						limit = { province_satisfaction > 0.1 }
+						divide = province_satisfaction
+					}
+					else = { divide = 0.1 }
+				}
+			}
+			max = var:size_of_mycenaean_civil_war_pretender_variable
+			hidden_effect = {
+				every_location_in_province = {
+					change_control = control_mild_penalty
+					every_pop = {
+						limit = {
+							owner = root
+						}
+						add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+						change_pop_allegiance = scope:mycenaean_civil_war_pretender
+					}
+				}
+			}
+		}
+    }
 
-#     option = {
-#         name = mycenaean_civil_war.1.a
-#     }
-# }
+    option = {
+        name = mycenaean_civil_war.1.a
+    }
+}
