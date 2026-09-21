@@ -49,11 +49,11 @@ trojan_war_phase_2 = {
 					}
 				}
 				if = { limit = { global_var:anatolia_raid_success_count = 2 } 
-					error_log = "Logic reached block"
+					# error_log = "Logic reached block"
 					add_country_modifier = { 
 						mode = add
 						modifier = trojan_war_greece_modifier_phase_two_during_war_greece_count_two  
-						days = 365
+						days = -1
 					}	
 				}
 				if = { limit = { global_var:anatolia_raid_success_count = 3 } 
