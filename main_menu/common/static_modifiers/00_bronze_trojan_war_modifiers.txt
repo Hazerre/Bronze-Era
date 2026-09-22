@@ -57,145 +57,145 @@ trojan_war_phase_2_flavor_event_10_b = {
 }
 #New modifiers for the Trojan War Phase 2
 # greece during war modifiers
-trojan_war_greece_modifier_phase_2_during_war_greece_count_one = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_one = {
     game_data = {
         category = country
     }
     siege_ability = 0.01
-    navy_levy_size = 0.01
+    global_navy_levy_size_modifier = 0.01
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_two = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_two = {
     game_data = {
         category = country
     }
     siege_ability = 0.02
-    navy_levy_size = 0.02
+    global_navy_levy_size_modifier = 0.02
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_three = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_three = {
     game_data = {
         category = country
     }
     siege_ability = 0.03
-    navy_levy_size = 0.03
+    global_navy_levy_size_modifier = 0.03
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_four = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_four = {
     game_data = {
         category = country
     }
     siege_ability = 0.04
-    navy_levy_size = 0.04
+    global_navy_levy_size_modifier = 0.04
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_five = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_five = {
     game_data = {
         category = country
     }
     siege_ability = 0.05
-    navy_levy_size = 0.05
+    global_navy_levy_size_modifier = 0.05
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_six = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_six = {
     game_data = {
         category = country
     }
     siege_ability = 0.06
-    navy_levy_size = 0.06
+    global_navy_levy_size_modifier = 0.06
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_seven = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_seven = {
     game_data = {
         category = country
     }
     siege_ability = 0.07
-    navy_levy_size = 0.07
+    global_navy_levy_size_modifier = 0.07
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_eight = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_eight = {
     game_data = {
         category = country
     }
     siege_ability = 0.08
-    navy_levy_size = 0.08
+    global_navy_levy_size_modifier = 0.08
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_nine = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_nine = {
     game_data = {
         category = country
     }
     siege_ability = 0.09
-    navy_levy_size = 0.09
+    global_navy_levy_size_modifier = 0.09
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_ten = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_ten = {
     game_data = {
         category = country
     }
     siege_ability = 0.1
-    navy_levy_size = 0.1
+    global_navy_levy_size_modifier = 0.1
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_eleven = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_eleven = {
     game_data = {
         category = country
     }
     siege_ability = 0.11
-    navy_levy_size = 0.11
+    global_navy_levy_size_modifier = 0.11
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_twelve = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_twelve = {
     game_data = {
         category = country
     }
     siege_ability = 0.12
-    navy_levy_size = 0.12
+    global_navy_levy_size_modifier = 0.12
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_thirteen = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_thirteen = {
     game_data = {
         category = country
     }
     siege_ability = 0.13
-    navy_levy_size = 0.13
+    global_navy_levy_size_modifier = 0.13
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_fourteen = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_fourteen = {
     game_data = {
         category = country
     }
     siege_ability = 0.14
-    navy_levy_size = 0.14
+    global_navy_levy_size_modifier = 0.14
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_fifteen = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_fifteen = {
     game_data = {
         category = country
     }
     siege_ability = 0.15
-    navy_levy_size = 0.15
+    global_navy_levy_size_modifier = 0.15
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_sixteen = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_sixteen = {
     game_data = {
         category = country
     }
     siege_ability = 0.16
-    navy_levy_size = 0.16
+    global_navy_levy_size_modifier = 0.16
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_seventeen = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_seventeen = {
     game_data = {
         category = country
     }
     siege_ability = 0.17
-    navy_levy_size = 0.17
+    global_navy_levy_size_modifier = 0.17
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_eighteen = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_eighteen = {
     game_data = {
         category = country
     }
     siege_ability = 0.18
-    navy_levy_size = 0.18
+    global_navy_levy_size_modifier = 0.18
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_nineteen = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_nineteen = {
     game_data = {
         category = country
     }
     siege_ability = 0.19
-    navy_levy_size = 0.19
+    global_navy_levy_size_modifier = 0.19
 }
-trojan_war_greece_modifier_phase_2_during_war_greece_count_twenty = {
+trojan_war_greece_modifier_phase_two_during_war_greece_count_twenty = {
     game_data = {
         category = country
     }
     siege_ability = 0.2
-    navy_levy_size = 0.2
+    global_navy_levy_size_modifier = 0.2
 }
 # anatolia during war modifiers
 trojan_war_anatolia_modifier_during_war_anatolia_during_war_count_one = {
