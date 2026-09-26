@@ -10517,6 +10517,14 @@ building_upkeep_costs = {
 	}
 }
 
+building_upkeep_multiplier = {
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
 legislative_efficiency={
 	percent=yes
 	game_data={
