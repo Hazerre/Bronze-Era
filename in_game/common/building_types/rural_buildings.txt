@@ -642,7 +642,7 @@ warrior_halls = {
 	category = military_category
 	forbidden_for_estates = yes
 	
-	employment_size = small_rural_peasant_produce_employment
+	employment_size = tiny_rural_peasant_produce_employment
 	
 	rural_settlement = yes
 	town = yes

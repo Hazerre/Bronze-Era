@@ -63,6 +63,8 @@ country_base_values = {
 	artillery_bonus_vs_fort = 5
 	fort_limit = 1 #default so everyone can have one fort
 
+	building_upkeep_multiplier = 0.2
+
 	government_reform_slots = 1
 	government_size = 2
 
